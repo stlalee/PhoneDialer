@@ -21,7 +21,7 @@ public class MainActivity extends ActionBarActivity {
         Button b = (Button) v;
         String t = b.getText().toString();
         TextView tv = (TextView) findViewById(R.id.textView);
-        tv.setText("Hello");
+        tv.setText(t);
     }
 
 
