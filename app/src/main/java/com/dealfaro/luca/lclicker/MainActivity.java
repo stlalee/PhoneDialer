@@ -15,6 +15,8 @@ public class MainActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
     }
 
     public void clickButton(View v) {
@@ -22,6 +24,13 @@ public class MainActivity extends ActionBarActivity {
         String t = b.getText().toString();
         TextView tv = (TextView) findViewById(R.id.textView);
         tv.setText(t);
+    }
+
+    public void clear(View v) {
+        Button b = (Button) v;
+        String t = b.getText().toString();
+        TextView tv = (TextView) findViewById(R.id.textView);
+        tv.setText("");
     }
 
 

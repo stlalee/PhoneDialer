@@ -14,6 +14,7 @@
         android:background="#ffc1daff"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
+        android:editable="false"
         android:layout_above="@+id/tableLayout" />
 
     <TableLayout
@@ -21,10 +22,10 @@
         android:layout_height="wrap_content"
         android:stretchColumns="*"
         android:id="@+id/tableLayout"
-        android:layout_centerVertical="true"
+        android:paddingTop="20dp"
+        android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:paddingTop="20dp">
+        android:layout_alignParentStart="true">
 
         <TableRow
             android:layout_width="fill_parent"
@@ -204,7 +205,7 @@
                 android:text="call"
                 android:id="@+id/b14"
                 android:padding="20dp"
-                android:onClick="clickButton"
+                android:onClick="clear"
                 android:textSize="24sp" />
 
         </TableRow>
