@@ -6,6 +6,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 
 
@@ -16,17 +17,23 @@ public class MainActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
     }
 
     public void clickButton(View v) {
         Button b = (Button) v;
         String t = b.getText().toString();
-        TextView tv = (TextView) findViewById(R.id.textView);
-        tv.setText(t);
+        EditText tv = (EditText) findViewById(R.id.textView);
+        tv.append(t);
     }
 
-    public void clear(View v) {
+    public void clickDel(View v) {
+        Button b = (Button) v;
+        String t = b.getText().toString();
+        EditText tv = (EditText) findViewById(R.id.textView);
+
+    }
+
+    public void clickCall(View v) {
         Button b = (Button) v;
         String t = b.getText().toString();
         TextView tv = (TextView) findViewById(R.id.textView);
