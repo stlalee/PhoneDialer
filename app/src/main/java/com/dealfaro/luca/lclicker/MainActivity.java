@@ -28,14 +28,16 @@ public class MainActivity extends ActionBarActivity {
 
     public void clickDel(View v) {
         Button b = (Button) v;
-        String t = b.getText().toString();
+        //String t = b.getText().toString();
         EditText tv = (EditText) findViewById(R.id.textView);
-
+        String t = tv.getText().toString();
+        t = t.substring(0,t.length()-1);
+        tv.setText(t);
     }
 
     public void clickCall(View v) {
-        Button b = (Button) v;
-        String t = b.getText().toString();
+        //Button b = (Button) v;
+        //String t = b.getText().toString();
         TextView tv = (TextView) findViewById(R.id.textView);
         tv.setText("");
     }
