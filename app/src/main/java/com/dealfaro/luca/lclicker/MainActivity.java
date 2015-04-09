@@ -32,7 +32,11 @@ public class MainActivity extends ActionBarActivity {
         EditText tv = (EditText) findViewById(R.id.textView);
         String t = tv.getText().toString();
         t = t.substring(0,t.length()-1);
-        tv.setText(t);
+        if (t.length() > 0)
+            tv.setText(t);
+        else
+            tv.setText("");
+            //return;
     }
 
     public void clickCall(View v) {
